@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(MoveCar))] //required to switch MoveCar script
-public class WestTurnRight : MonoBehaviour
+public class NorthTurnRight : MonoBehaviour
 {
     private Rigidbody rb;
     private float angleSpeed; // speed of angle when the car turn
@@ -21,14 +21,14 @@ public class WestTurnRight : MonoBehaviour
     void LeftTurn()
     {
         float carRotation = Mathf.Floor(transform.eulerAngles.y);
-        //check if position for x > -14 then we rotate the car to right
-        if (transform.localPosition.x > -14f && carRotation != 180f)
+        //check if position for z < 17 then we rotate the car to right
+        if (transform.localPosition.z < 17f && carRotation != 270f)
         {
             //if speed so hight we need to stop car to prevent skid
-            if (carRotation >= 180f && carRotation <= 184f)
+            if (carRotation >= 269f && carRotation <= 274f)
             {
 
-                transform.localRotation = Quaternion.Euler(new Vector3(0, 180f, 0));
+                transform.localRotation = Quaternion.Euler(new Vector3(0, 270f, 0));
                 return;
             }
             //set speed turn for the car

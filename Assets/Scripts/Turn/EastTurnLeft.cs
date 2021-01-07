@@ -21,8 +21,8 @@ public class EastTurnLeft : MonoBehaviour
     void LeftTurn()
     {
         float carRotation = Mathf.Floor(transform.eulerAngles.y);
-        //check if position for x < -1.5 then we rotate the car to left
-        if (transform.localPosition.x < -1.5f && carRotation != 180f)
+        //check if position for x < -0.5 then we rotate the car to left
+        if (transform.localPosition.x < -0.5f && carRotation != 180f)
         {
             //if speed so hight we need to stop car to prevent skid
             if (carRotation >= -180f && carRotation <= 180f)
