@@ -22,13 +22,12 @@ public class SouthTurnRight : MonoBehaviour
     {
         float carRotation = Mathf.Floor(transform.eulerAngles.y);
         //check if position for z > -5.5 then we rotate the car to right
-        if (transform.localPosition.z > -5.5f && carRotation != 90f)
+        if (transform.localPosition.z > -3.64f && carRotation != 270f)
         {
             //if speed so hight we need to stop car to prevent skid
-            if (carRotation >= 89f && carRotation <= 94f)
+            if (carRotation >= 269f && carRotation <= 274f)
             {
-
-                transform.localRotation = Quaternion.Euler(new Vector3(0, 90f, 0));
+                transform.localRotation = Quaternion.Euler(new Vector3(0, 270f, 0));
                 return;
             }
             //set speed turn for the car

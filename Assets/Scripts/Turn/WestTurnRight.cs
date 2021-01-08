@@ -21,14 +21,13 @@ public class WestTurnRight : MonoBehaviour
     void LeftTurn()
     {
         float carRotation = Mathf.Floor(transform.eulerAngles.y);
-        //check if position for x > -14 then we rotate the car to right
-        if (transform.localPosition.x > -14f && carRotation != 180f)
+        //check if position for x > -15 then we rotate the car to right
+        if (transform.localPosition.x > -15f && carRotation != 0f)
         {
             //if speed so hight we need to stop car to prevent skid
-            if (carRotation >= 180f && carRotation <= 184f)
+            if (carRotation >= -1f && carRotation <= 4f)
             {
-
-                transform.localRotation = Quaternion.Euler(new Vector3(0, 180f, 0));
+                transform.localRotation = Quaternion.Euler(new Vector3(0, 0f, 0));
                 return;
             }
             //set speed turn for the car

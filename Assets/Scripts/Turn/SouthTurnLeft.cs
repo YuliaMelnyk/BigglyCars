@@ -21,14 +21,13 @@ public class SouthTurnLeft : MonoBehaviour
     void LeftTurn()
     {
         float carRotation = Mathf.Floor(transform.eulerAngles.y);
-        //check if position for z > 9 then we rotate the car to left
-        if (transform.localPosition.z > 9f && carRotation != -90f)
+        //check if position for z > 3.9 then we rotate the car to left
+        if (transform.localPosition.z > 3.9f && carRotation != 90f)
         {
             //if speed so hight we need to stop car to prevent skid
-            if (carRotation >= -270f && carRotation <= 270f)
+            if (carRotation >= 89f && carRotation <= 94f)
             {
-
-                transform.localRotation = Quaternion.Euler(new Vector3(0, -90f, 0));
+                transform.localRotation = Quaternion.Euler(new Vector3(0, 90f, 0));
                 return;
             }
             //set speed turn for the car

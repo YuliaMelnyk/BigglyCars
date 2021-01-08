@@ -22,13 +22,12 @@ public class EastTurnLeft : MonoBehaviour
     {
         float carRotation = Mathf.Floor(transform.eulerAngles.y);
         //check if position for x < -0.5 then we rotate the car to left
-        if (transform.localPosition.x < -0.5f && carRotation != 180f)
+        if (transform.localPosition.x < -0.5f && carRotation != 0f)
         {
             //if speed so hight we need to stop car to prevent skid
-            if (carRotation >= -180f && carRotation <= 180f)
+            if (carRotation >= -1f && carRotation <= 4f)
             {
-
-                transform.localRotation = Quaternion.Euler(new Vector3(0, 180f, 0));
+                transform.localRotation = Quaternion.Euler(new Vector3(0, 0f, 0));
                 return;
             }
             //set speed turn for the car

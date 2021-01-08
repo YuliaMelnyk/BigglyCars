@@ -15,20 +15,19 @@ public class NorthTurnRight : MonoBehaviour
 
     private void FixedUpdate()
     {
-        LeftTurn();
+        RightTurn();
     }
 
-    void LeftTurn()
+    void RightTurn()
     {
         float carRotation = Mathf.Floor(transform.eulerAngles.y);
         //check if position for z < 17 then we rotate the car to right
-        if (transform.localPosition.z < 17f && carRotation != 270f)
+        if (transform.localPosition.z < 17f && carRotation != 90f)
         {
             //if speed so hight we need to stop car to prevent skid
-            if (carRotation >= 269f && carRotation <= 274f)
+            if (carRotation >= 89f && carRotation <= 94f)
             {
-
-                transform.localRotation = Quaternion.Euler(new Vector3(0, 270f, 0));
+                transform.localRotation = Quaternion.Euler(new Vector3(0, 90f, 0));
                 return;
             }
             //set speed turn for the car

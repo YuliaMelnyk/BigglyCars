@@ -16,6 +16,6 @@ public class MoveCar : MonoBehaviour
     private void FixedUpdate()
     {
         //move position forward of car
-        rb.MovePosition(transform.position +transform.forward * speed * Time.fixedDeltaTime);
+        rb.MovePosition(transform.position -transform.forward * speed * Time.fixedDeltaTime);
     }
 }
