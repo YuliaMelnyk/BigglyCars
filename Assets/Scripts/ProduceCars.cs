@@ -7,6 +7,7 @@ public class ProduceCars : MonoBehaviour
     public GameObject[] cars;
     private float startProduce = 0.5f; //speed whitch apearse the car
     private float waitProduce = 7f;
+    private int countCars = 0; // to delete cars
 
     private void Start()
     {
@@ -15,6 +16,21 @@ public class ProduceCars : MonoBehaviour
         StartCoroutine(northCars());
         StartCoroutine(southCars());
 
+    }
+
+    private void Update()
+    {
+        //when we have more cars, we produce cars not so frequenly
+        if (countCars > 40)
+        {
+            waitProduce = 4f;
+        } else if (countCars > 40)
+        {
+            waitProduce = 5f;
+        } else if (countCars > 20)
+        {
+            waitProduce = 6f;
+        }
     }
 
     //west car
@@ -28,6 +44,7 @@ public class ProduceCars : MonoBehaviour
             //get random car whith the position in the west
             GameObject carInstance = Instantiate(cars[Random.Range(0, cars.Length)], new Vector3(-80f, 0, 2.1f),
                 Quaternion.Euler(new Vector3(0,-90f,0))) as GameObject;
+            countCars++;
             //random option for turn or left or right
             int rand = Random.Range(0, 4);
             switch (rand)
@@ -56,6 +73,7 @@ public class ProduceCars : MonoBehaviour
             //get random car whith the position in the east
             GameObject carInstance = Instantiate(cars[Random.Range(0, cars.Length)], new Vector3(27f, 0, 10.5f),
                 Quaternion.Euler(new Vector3(0, 90f, 0))) as GameObject;
+            countCars++;
             //random option for turn or left or right
             int rand = Random.Range(0, 4);
             switch (rand)
@@ -83,6 +101,7 @@ public class ProduceCars : MonoBehaviour
             //get random car whith the position in the east
             GameObject carInstance = Instantiate(cars[Random.Range(0, cars.Length)], new Vector3(-6.9f, 0, 70f),
                 Quaternion.Euler(new Vector3(0, 0f, 0))) as GameObject;
+            countCars++;
             //random option for turn or left or right
             int rand = Random.Range(0, 4);
             switch (rand)
@@ -110,6 +129,7 @@ public class ProduceCars : MonoBehaviour
             //get random car whith the position in the east
             GameObject carInstance = Instantiate(cars[Random.Range(0, cars.Length)], new Vector3(-0.3f, 0, -30f),
                 Quaternion.Euler(new Vector3(0, 180f, 0))) as GameObject;
+            countCars++;
             //random option for turn or left or right
             int rand = Random.Range(0, 4);
             switch (rand)
