@@ -2,6 +2,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(MoveCar))] //required to switch MoveCar script
+[RequireComponent(typeof(CarLights))] //required to switch CarLight script
 public class NorthTurnLeft : MonoBehaviour
 {
     private Rigidbody rb;
@@ -10,7 +11,8 @@ public class NorthTurnLeft : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        //set Left light
+        GetComponent<CarLights>().showObject = 1;
     }
 
     private void FixedUpdate()

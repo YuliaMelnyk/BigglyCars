@@ -2,6 +2,8 @@
 using UnityEngine;
 
 [RequireComponent(typeof(MoveCar))] //required to switch MoveCar script
+[RequireComponent(typeof(CarLights))] //required to switch CarLight script
+
 public class SouthTurnRight : MonoBehaviour
 {
     private Rigidbody rb;
@@ -10,6 +12,8 @@ public class SouthTurnRight : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        //set Right light
+        GetComponent<CarLights>().showObject = 0;
 
     }
 
