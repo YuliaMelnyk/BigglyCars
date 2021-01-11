@@ -202,7 +202,6 @@ GameObject:
   - component: {fileID: 183698839495268747}
   - component: {fileID: 1091081609326527894}
   - component: {fileID: -2223296656485935845}
-  - component: {fileID: -921413636936312986}
   m_Layer: 0
   m_Name: Car02
   m_TagString: Player
@@ -331,7 +330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b850c8012dd1a4199b338e8b79c7b0c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 14
+  turnSignal: {fileID: 6421456297859315069, guid: 17c8731aa0be940c597382517101fe8f,
+    type: 3}
+  speed: 12
 --- !u!65 &183698839495268747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -369,19 +370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9832d6b96374da59ea97d29faaf87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-921413636936312986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8585089547304836197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ecfc00955e1d48eba105766b0d17c94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showObject: 0
 --- !u!1 &8585089547304836201
 GameObject:
   m_ObjectHideFlags: 0

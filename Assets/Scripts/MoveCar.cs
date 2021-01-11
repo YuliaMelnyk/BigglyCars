@@ -6,8 +6,9 @@ using UnityEngine;
 //switch this element
 public class MoveCar : MonoBehaviour
 {
+    public GameObject turnSignal;
     private Rigidbody rb;
-    public float speed = 9f; //speed of car
+    public float speed = 12f; //speed of car
 
     private void Start()
     {

@@ -513,11 +513,10 @@ GameObject:
   - component: {fileID: 7480300284507980415}
   - component: {fileID: 5489282165376999655}
   - component: {fileID: 7396964574460196045}
-  - component: {fileID: 8392620918523530692}
   - component: {fileID: 4252129792188672943}
   - component: {fileID: 6213057939943372226}
   - component: {fileID: -7061934951655954332}
-  - component: {fileID: 1219524080810209246}
+  - component: {fileID: 7054920125332818390}
   m_Layer: 0
   m_Name: Car01
   m_TagString: Player
@@ -621,19 +620,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.1594024, y: 3.5444345, z: 5.3236604}
   m_Center: {x: 0, y: 2.0271714, z: -0.00000166893}
---- !u!114 &8392620918523530692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7480300284509985983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b850c8012dd1a4199b338e8b79c7b0c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!65 &4252129792188672943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -671,7 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9832d6b96374da59ea97d29faaf87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1219524080810209246
+--- !u!114 &7054920125332818390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -680,7 +666,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7480300284509985983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ecfc00955e1d48eba105766b0d17c94, type: 3}
+  m_Script: {fileID: 11500000, guid: b850c8012dd1a4199b338e8b79c7b0c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showObject: 0
+  turnSignal: {fileID: 6421456297859315069, guid: 17c8731aa0be940c597382517101fe8f,
+    type: 3}
+  speed: 12
