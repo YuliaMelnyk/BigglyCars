@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(MoveCar))]
 public class BumpCar : MonoBehaviour
 {
+    //public GameObject explode;
     public static bool lose = false; //if we lose or not
     private bool onceStop;
 
@@ -16,7 +17,15 @@ public class BumpCar : MonoBehaviour
             onceStop = true;
             gameObject.GetComponent<MoveCar>().speed = 0f; //stop the car
             collision.gameObject.GetComponent<MoveCar>().speed = 0f;//stop the other car
-            gameObject.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * -1000); //add a hit 
+            gameObject.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * -1000); //add a hit
+
+            // explosion
+            /**if (gameObject.transform.position.x < collision.gameObject.transform.position.x)
+            {
+                Vector3 pos = Vector3.Lerp(gameObject.transform.position, collision.transform.position, 0.5f);
+                Instantiate(explode, new Vector3(pos.x, 2.7f, pos.z), Quaternion.identity);
+            }
+            **/
         }
     }
 }

@@ -7,11 +7,11 @@ public class CarLights : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(light());
+        StartCoroutine(OpenLight());
        
     }
 
-    IEnumerator light()
+    IEnumerator OpenLight()
     {
         yield return new WaitForSeconds(0.2f);
         //set active a light

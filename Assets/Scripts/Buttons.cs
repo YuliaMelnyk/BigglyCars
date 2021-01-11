@@ -71,7 +71,14 @@ public class Buttons : MonoBehaviour
                 //change screne
                 StartCoroutine(Loadscene("Game"));
                 break;
-            
+            case "Replay":
+                //change screne
+                StartCoroutine(Loadscene("Game"));
+                break;
+            case "Home":
+                //change screne
+                StartCoroutine(Loadscene("Main"));
+                break;
             case "Music":
                 child.gameObject.SetActive(false);
                 if (PlayerPrefs.GetString("Music") != "no") //music now is playing, we can off

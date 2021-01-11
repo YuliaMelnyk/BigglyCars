@@ -35,15 +35,15 @@ public class ProduceCars : MonoBehaviour
             //when we have more cars, we produce cars not so frequenly
             if (countCars > 40)
             {
-                waitProduce = 4f;
+                waitProduce = 1f;
             }
-            else if (countCars > 40)
+            else if (countCars > 30)
             {
-                waitProduce = 5f;
+                waitProduce = 1.5f;
             }
             else if (countCars > 20)
             {
-                waitProduce = 6f;
+                waitProduce = 2f;
             }
         }
        
@@ -68,7 +68,7 @@ public class ProduceCars : MonoBehaviour
                 Quaternion.Euler(new Vector3(0,-90f,0))) as GameObject;
             countCars++;
             //random option for turn or left or right (if this a mainScene - we turn to right)
-            int rand = mainScene? 2: Random.Range(0,4);
+            int rand = mainScene ? 2: Random.Range(0,4);
             switch (rand)
             {
                 case 1:
