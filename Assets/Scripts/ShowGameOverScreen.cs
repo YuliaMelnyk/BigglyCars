@@ -4,7 +4,7 @@ using UnityEngine;
 public class ShowGameOverScreen : MonoBehaviour
 {
     [SerializeField]
-    private GameObject gameOver;
+    private GameObject gameOver, slowTime;
     private bool addOnce; //to open once time in our game
 
     private void Update()
@@ -12,7 +12,8 @@ public class ShowGameOverScreen : MonoBehaviour
         if(BumpCar.lose && !addOnce)
         {
             addOnce = true;
-            gameObject.SetActive(true);
+            slowTime.SetActive(false);
+            gameOver.SetActive(true);
         }
     }
 
