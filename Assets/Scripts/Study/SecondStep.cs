@@ -1,0 +1,27 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class SecondStep : MonoBehaviour
+{
+    public Text study;
+    // Start is called before the first frame update
+    void Start()
+    {
+        study.text = "Watch where the car turns";
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
+    //in finish we change a scene
+    private void OnDisable()
+    {
+        //Set key if we finished a study, to not study more
+        PlayerPrefs.SetString("Study", "Yes");
+        SceneManager.LoadScene("Game");
+    }
+}

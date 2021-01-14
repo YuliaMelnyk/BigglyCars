@@ -68,8 +68,10 @@ public class Buttons : MonoBehaviour
         switch (gameObject.name)
         {
             case "Play":
+                //if we start the game for the first time we need to start with the study scene
+                string scene = PlayerPrefs.HasKey("Study") ? "Game" : "Study";
                 //change screne
-                StartCoroutine(Loadscene("Game"));
+                StartCoroutine(Loadscene(scene));
                 break;
             case "Replay":
                 //change screne
@@ -78,6 +80,10 @@ public class Buttons : MonoBehaviour
             case "Home":
                 //change screne
                 StartCoroutine(Loadscene("Main"));
+                break;
+            case "How To":
+                //change screne
+                StartCoroutine(Loadscene("Study"));
                 break;
             case "Music":
                 child.gameObject.SetActive(false);
