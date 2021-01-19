@@ -32,6 +32,11 @@ public class SlowTime : MonoBehaviour
     }
      void OnMouseDown()
     {
+        //play the sound
+        if (PlayerPrefs.GetString("Music") != "no")
+        {
+            GetComponent<AudioSource>().Play();
+        }
         //if we touch the slowTime we cant slow more then 0.5f
         if (PlayerPrefs.GetInt("Slow time") > 0 && Time.timeScale != 0.5f)
         {

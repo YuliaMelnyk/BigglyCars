@@ -46,7 +46,13 @@ public class Buttons : MonoBehaviour
     //when user pressed the mouse down image sprite change to imege pressed
      void OnMouseDown()
     {
-        
+        //check if music off we start a play music
+        if (PlayerPrefs.GetString("Music") != "no")
+        {
+            GetComponent<AudioSource>().Play();
+
+        }
+
         img.sprite = pressed;
         yPos = child.localPosition.y;
         //change position of button of Y

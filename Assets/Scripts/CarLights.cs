@@ -3,12 +3,16 @@ using System.Collections;
 
 public class CarLights : MonoBehaviour
 {
+    
     public int showObject; //value for right or left light
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(OpenLight());
-       
+        if (PlayerPrefs.GetString("Music") != "no")
+        {
+            StartCoroutine(sound());
+        }
     }
 
     IEnumerator OpenLight()
@@ -23,5 +27,12 @@ public class CarLights : MonoBehaviour
             light.SetActive(!light.activeSelf);
             yield return new WaitForSeconds(0.5f);
         }
+    }
+    //we play sound 2 sec and then we destoy it
+    IEnumerator sound()
+    {
+        GameObject s = Instantiate(GetComponent<MoveCar>().turnSignal, new Vector3(0,0,0), Quaternion.identity) as GameObject;
+        yield return new WaitForSeconds(2f);
+        Destroy(s.gameObject);
     }
 }

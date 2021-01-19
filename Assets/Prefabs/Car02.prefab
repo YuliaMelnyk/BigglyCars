@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b850c8012dd1a4199b338e8b79c7b0c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSignal: {fileID: 6421456297859315069, guid: 17c8731aa0be940c597382517101fe8f,
+  turnSignal: {fileID: 3747696568370340111, guid: 3693864cee39f4a4a8f012a655538224,
     type: 3}
   speed: 12
 --- !u!65 &183698839495268747
