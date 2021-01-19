@@ -847,6 +847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c5e821090f84c6ea8ff0e3e81fc7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exhaust: {fileID: 1855098305116550570, guid: 38783997768d1437c87f830aadeaa40a, type: 3}
 --- !u!114 &1008090351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1419,6 +1420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondCar: {fileID: 1008090348}
+  exhaust: {fileID: 1855098305116550570, guid: 38783997768d1437c87f830aadeaa40a, type: 3}
   study: {fileID: 754075711}
 --- !u!1 &1881327390
 GameObject:

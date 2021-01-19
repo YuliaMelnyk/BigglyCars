@@ -17,7 +17,7 @@ public class Buttons : MonoBehaviour
     // Start is called before the first frame update
      void Start()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
         //change image when user pressed the button
         img = GetComponent<Image>();
 

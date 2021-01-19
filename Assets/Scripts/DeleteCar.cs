@@ -7,6 +7,7 @@ public class DeleteCar : MonoBehaviour
      void Start()
     {
         countCars = 0;
+        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins"));
     }
     //when car is touch the block(trigger) we delete it
      void OnTriggerEnter(Collider other)

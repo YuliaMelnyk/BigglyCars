@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 109745962}
   - component: {fileID: 109745961}
   - component: {fileID: 109745960}
+  - component: {fileID: 109745965}
   m_Layer: 5
   m_Name: SelectLA
   m_TagString: Untagged
@@ -549,6 +550,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109745958}
   m_CullTransparentMesh: 0
+--- !u!114 &109745965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109745958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c914024b53dce4128a292c7096209c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notCurrentLocationButtons:
+  - {fileID: 412247115}
+  - {fileID: 958557876}
+  - {fileID: 1491865103}
+  thisOne: {fileID: 21300000, guid: e4ac5a27f57224969b770b1c62f2cf2c, type: 3}
+  otherOne: {fileID: 21300000, guid: c4027b4c5d60b471ba6a3cfc42b7651d, type: 3}
+  nameOfLocation: LA
 --- !u!1 &247434859
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +583,7 @@ GameObject:
   - component: {fileID: 247434863}
   - component: {fileID: 247434862}
   - component: {fileID: 247434861}
+  - component: {fileID: 247434866}
   m_Layer: 5
   m_Name: SelectMalaga
   m_TagString: Untagged
@@ -669,6 +690,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247434859}
   m_CullTransparentMesh: 0
+--- !u!114 &247434866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247434859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c914024b53dce4128a292c7096209c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notCurrentLocationButtons:
+  - {fileID: 412247115}
+  - {fileID: 958557876}
+  - {fileID: 1491865103}
+  thisOne: {fileID: 21300000, guid: e4ac5a27f57224969b770b1c62f2cf2c, type: 3}
+  otherOne: {fileID: 21300000, guid: c4027b4c5d60b471ba6a3cfc42b7651d, type: 3}
+  nameOfLocation: Malaga
 --- !u!1 &262739155
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 601b00ca0b9de0247beae089ec7e640f, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 601b00ca0b9de0247beae089ec7e640f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1315,42 +1355,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &783236688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 783236689}
-  m_Layer: 0
-  m_Name: Game Over
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &783236689
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783236688}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1008097380}
-  m_Father: {fileID: 840771710}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &840771706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,7 +1445,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 783236689}
+  - {fileID: 1008097380}
   - {fileID: 1805639868}
   - {fileID: 1729243630}
   - {fileID: 59049039}
@@ -1731,7 +1735,7 @@ GameObject:
   - component: {fileID: 997027592}
   - component: {fileID: 997027591}
   m_Layer: 5
-  m_Name: BuyLA
+  m_Name: BuyLACoins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1830,13 +1834,13 @@ RectTransform:
   - {fileID: 1253938049}
   - {fileID: 1233895987}
   - {fileID: 1241143129}
-  m_Father: {fileID: 783236689}
+  m_Father: {fileID: 840771710}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.5, y: -2.6}
-  m_SizeDelta: {x: 800.9469, y: 402.64713}
+  m_AnchoredPosition: {x: 0.5, y: -2.599945}
+  m_SizeDelta: {x: 0.9468994, y: 5.4249268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1015337940
 GameObject:
@@ -1992,8 +1996,9 @@ GameObject:
   - component: {fileID: 1092212242}
   - component: {fileID: 1092212241}
   - component: {fileID: 1092212240}
+  - component: {fileID: 1092212245}
   m_Layer: 5
-  m_Name: BuyLA
+  m_Name: BuyLACoins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2098,6 +2103,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092212238}
   m_CullTransparentMesh: 0
+--- !u!114 &1092212245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092212238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c3334ba7ab344d9ab738acecc1174b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkedButton: {fileID: 109745958}
+  unchekedButton: {fileID: 21300000, guid: c4027b4c5d60b471ba6a3cfc42b7651d, type: 3}
+  checkedButtonSprite: {fileID: 21300000, guid: e4ac5a27f57224969b770b1c62f2cf2c,
+    type: 3}
+  notCurrentLocationButtons:
+  - {fileID: 412247115}
+  - {fileID: 958557876}
+  - {fileID: 1491865103}
+  buttonsToDisable:
+  - {fileID: 1092212238}
+  - {fileID: 1253938048}
+  coins: {fileID: 555287632}
+  price: 1000
+  nameOfLocation: LA
 --- !u!1 &1132941896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,6 +2143,7 @@ GameObject:
   - component: {fileID: 1132941900}
   - component: {fileID: 1132941899}
   - component: {fileID: 1132941898}
+  - component: {fileID: 1132941903}
   m_Layer: 5
   m_Name: SelectManhattan
   m_TagString: Untagged
@@ -2218,6 +2250,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132941896}
   m_CullTransparentMesh: 0
+--- !u!114 &1132941903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132941896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c914024b53dce4128a292c7096209c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notCurrentLocationButtons:
+  - {fileID: 412247115}
+  - {fileID: 958557876}
+  - {fileID: 1491865103}
+  thisOne: {fileID: 21300000, guid: e4ac5a27f57224969b770b1c62f2cf2c, type: 3}
+  otherOne: {fileID: 21300000, guid: c4027b4c5d60b471ba6a3cfc42b7651d, type: 3}
+  nameOfLocation: Manhattan
 --- !u!1 &1233895986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,8 +2283,9 @@ GameObject:
   - component: {fileID: 1233895990}
   - component: {fileID: 1233895989}
   - component: {fileID: 1233895988}
+  - component: {fileID: 1233895993}
   m_Layer: 5
-  m_Name: BuyManh
+  m_Name: BuyManhCoins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2338,6 +2390,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233895986}
   m_CullTransparentMesh: 0
+--- !u!114 &1233895993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233895986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c3334ba7ab344d9ab738acecc1174b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkedButton: {fileID: 1132941896}
+  unchekedButton: {fileID: 21300000, guid: c4027b4c5d60b471ba6a3cfc42b7651d, type: 3}
+  checkedButtonSprite: {fileID: 21300000, guid: e4ac5a27f57224969b770b1c62f2cf2c,
+    type: 3}
+  notCurrentLocationButtons:
+  - {fileID: 412247115}
+  - {fileID: 958557876}
+  - {fileID: 1491865103}
+  buttonsToDisable:
+  - {fileID: 1233895986}
+  - {fileID: 1241143128}
+  coins: {fileID: 555287632}
+  price: 5000
+  nameOfLocation: Manhattan
 --- !u!1001 &1234853978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2351,7 +2429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046202349130672, guid: eac406a61aaed8d448c9491a41fc4c32, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4046202349130672, guid: eac406a61aaed8d448c9491a41fc4c32, type: 3}
       propertyPath: m_LocalScale.x
@@ -2753,7 +2831,7 @@ GameObject:
   - component: {fileID: 1486831227}
   - component: {fileID: 1486831226}
   m_Layer: 5
-  m_Name: BuyManh
+  m_Name: BuyManhCoins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3121,51 +3199,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650441235}
   m_CullTransparentMesh: 0
---- !u!1 &1661104897
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1661104899}
-  - component: {fileID: 1661104898}
-  m_Layer: 0
-  m_Name: Game OverPanel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1661104898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661104897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fed1d84eb093841d9bff33bcec64e2dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOver: {fileID: 783236688}
-  slowTime: {fileID: 0}
---- !u!4 &1661104899
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661104897}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1729243629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3438,7 +3471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019579600315100, guid: d775689da273908438209f498f155bc4, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4019579600315100, guid: d775689da273908438209f498f155bc4, type: 3}
       propertyPath: m_LocalScale.x
