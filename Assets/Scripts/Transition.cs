@@ -11,7 +11,7 @@ public class Transition : MonoBehaviour
     private float alpfa = 1.0f;
     private int direction = -1; //from black our screen fading
 
-    private void OnGUI()
+     void OnGUI()
     {
         //change alpfa
         alpfa += direction * speed * Time.deltaTime;
@@ -33,7 +33,7 @@ public class Transition : MonoBehaviour
     }
 
     //when run our script change our screen from black to transparent
-    private void OnEnable()
+     void OnEnable()
     {
         BeginFade(-1);
     }

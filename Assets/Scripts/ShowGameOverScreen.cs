@@ -7,7 +7,7 @@ public class ShowGameOverScreen : MonoBehaviour
     private GameObject gameOver, slowTime;
     private bool addOnce; //to open once time in our game
 
-    private void Update()
+     void Update()
     {
         if(BumpCar.lose && !addOnce)
         {

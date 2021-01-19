@@ -9,7 +9,7 @@ public class EastTurnLeft : MonoBehaviour
     private Rigidbody rb;
     private float angleSpeed; // speed of angle when the car turn
 
-    private void Start()
+     void Start()
     {
         rb = GetComponent<Rigidbody>();
         //set Left light
@@ -17,7 +17,7 @@ public class EastTurnLeft : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+     void FixedUpdate()
     {
         LeftTurn();
     }

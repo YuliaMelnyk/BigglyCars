@@ -8,7 +8,7 @@ public class NorthTurnRight : MonoBehaviour
     private Rigidbody rb;
     private float angleSpeed; // speed of angle when the car turn
 
-    private void Start()
+     void Start()
     {
         rb = GetComponent<Rigidbody>();
         //set Right light
@@ -16,7 +16,7 @@ public class NorthTurnRight : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+     void FixedUpdate()
     {
         RightTurn();
     }

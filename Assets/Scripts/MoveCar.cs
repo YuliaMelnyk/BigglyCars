@@ -10,11 +10,11 @@ public class MoveCar : MonoBehaviour
     private Rigidbody rb;
     public float speed = 12f; //speed of car
 
-    private void Start()
+     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
-    private void FixedUpdate()
+     void FixedUpdate()
     {
         //move position forward of car
         rb.MovePosition(transform.position -transform.forward * speed * Time.fixedDeltaTime);

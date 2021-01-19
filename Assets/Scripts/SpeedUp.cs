@@ -8,7 +8,7 @@ public class SpeedUp : MonoBehaviour
     public GameObject exhaust; //cansada
     private bool accelerate = false; //check if we accelerate car o not
 
-    private void OnMouseDown()
+     void OnMouseDown()
     {
         if (!accelerate)
         {

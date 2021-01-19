@@ -8,7 +8,7 @@ public class SlowTime : MonoBehaviour
     private Text countSlow;
     public Sprite active, inactive;
 
-    private void Start()
+     void Start()
     {
         countSlow = gameObject.transform.GetChild(0).transform.GetComponent<Text>();
 
@@ -30,7 +30,7 @@ public class SlowTime : MonoBehaviour
             GetComponent<Image>().sprite = active;
         }
     }
-    private void OnMouseDown()
+     void OnMouseDown()
     {
         //if we touch the slowTime we cant slow more then 0.5f
         if (PlayerPrefs.GetInt("Slow time") > 0 && Time.timeScale != 0.5f)

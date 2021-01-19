@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Coins : MonoBehaviour
 {
-    private void OnEnable()
+    public void OnEnable()
     {
         GetComponent<Text>().text = PlayerPrefs.GetInt("Coins").ToString();
     }

@@ -1004,10 +1004,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17346ec6fa9d8496fbb5cf425d037e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainScene: 0
   cars:
   - {fileID: 7480300284509985983, guid: 4d8d617416cca4451aba3d7acf7a1200, type: 3}
   - {fileID: 8585089547304836197, guid: 7612608aa4c214b2aa6146f6b24090ba, type: 3}
-  mainScene: 0
 --- !u!1 &990781344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,7 +1598,7 @@ GameObject:
   - component: {fileID: 1499994710}
   - component: {fileID: 1499994709}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1691,7 +1691,7 @@ GameObject:
   - component: {fileID: 1520232668}
   - component: {fileID: 1520232667}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2244,7 +2244,7 @@ GameObject:
   - component: {fileID: 1939152148}
   - component: {fileID: 1939152147}
   m_Layer: 5
-  m_Name: Tienda
+  m_Name: Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

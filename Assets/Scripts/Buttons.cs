@@ -15,7 +15,7 @@ public class Buttons : MonoBehaviour
     private Transform child;
 
     // Start is called before the first frame update
-    private void Start()
+     void Start()
     {
         PlayerPrefs.DeleteAll();
         //change image when user pressed the button
@@ -44,7 +44,7 @@ public class Buttons : MonoBehaviour
     }
 
     //when user pressed the mouse down image sprite change to imege pressed
-    private void OnMouseDown()
+     void OnMouseDown()
     {
         
         img.sprite = pressed;
@@ -55,7 +55,7 @@ public class Buttons : MonoBehaviour
 
     //change back for image button
 
-    private void OnMouseUp()
+     void OnMouseUp()
     {
         img.sprite = button;
         //return button on default position
@@ -63,7 +63,7 @@ public class Buttons : MonoBehaviour
 
     }
 
-    private void OnMouseUpAsButton()
+     void OnMouseUpAsButton()
     {
         switch (gameObject.name)
         {
@@ -84,6 +84,14 @@ public class Buttons : MonoBehaviour
             case "How To":
                 //change screne
                 StartCoroutine(Loadscene("Study"));
+                break;
+            case "Shop":
+                //change screne
+                StartCoroutine(Loadscene("Shop"));
+                break;
+            case "Close":
+                //change screne
+                StartCoroutine(Loadscene("Main"));
                 break;
             case "Music":
                 child.gameObject.SetActive(false);

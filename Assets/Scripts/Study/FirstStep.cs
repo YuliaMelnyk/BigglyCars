@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(MoveCar))]
 public class FirstStep : MonoBehaviour
 {
-    public GameObject secondCar; //default second car is inactive
+    public GameObject secondCar, exhaust; //default second car is inactive
     public Text study;
     private bool firstStep;
 
@@ -35,16 +35,21 @@ public class FirstStep : MonoBehaviour
         GetComponent<MoveCar>().speed = 12f;
     }
 
-    private void OnMouseDown()
+     void OnMouseDown()
     {
         if (firstStep)
         {
             GetComponent<MoveCar>().speed = 30f;
             study.text = "";
+
+            GameObject ex = Instantiate(exhaust,
+                new Vector3(gameObject.transform.position.x, 0.2f, gameObject.transform.position.z),
+                Quaternion.Euler(new Vector3(90, 0, 0))) as GameObject;
+            Destroy(ex, 1f);
         }
     }
     //we need to make active the second car
-    private void OnDisable()
+     void OnDisable()
     {
         secondCar.SetActive(true);
     }

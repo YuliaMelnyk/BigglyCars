@@ -13,15 +13,12 @@ public class SecondStep : MonoBehaviour
         study.text = "Watch where the car turns";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
+   
     //in finish we change a scene
-    private void OnDisable()
+    void OnDisable()
     {
         //Set key if we finished a study, to not study more
-        PlayerPrefs.SetString("Study", "Yes");
+        PlayerPrefs.SetString("Study", "Done");
         SceneManager.LoadScene("Game");
     }
 }

@@ -8,7 +8,7 @@ public class Score : MonoBehaviour
     [SerializeField]
     private Text topRecord;
 
-    private void OnEnable()
+     void OnEnable()
     {
         GetComponent<Text>().text = "Score: " + DeleteCar.countCars.ToString();
         //PlayerPrefs.SetInt("CarsPassed", PlayerPrefs.GetInt("CarsPassed") + DeleteCar.countCars);

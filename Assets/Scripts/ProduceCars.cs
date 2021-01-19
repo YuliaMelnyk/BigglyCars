@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ProduceCars : MonoBehaviour
 {
+    [SerializeField]
+    private bool mainScene;
     public GameObject[] cars;
     private float startProduce = 0.5f; //speed whitch apearse the car
     private float waitProduce;
@@ -11,10 +13,9 @@ public class ProduceCars : MonoBehaviour
 
     private bool onceStop; //to finish a game
 
-    [SerializeField]
-    private bool mainScene;
+    
 
-    private void Start()
+     void Start()
     {
         StartCoroutine(westCars());
         StartCoroutine(eastCars());
@@ -28,7 +29,7 @@ public class ProduceCars : MonoBehaviour
 
     }
 
-    private void Update()
+     void Update()
     {
         if (!mainScene)
         {

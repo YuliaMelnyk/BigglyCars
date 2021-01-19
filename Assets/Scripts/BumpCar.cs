@@ -8,7 +8,7 @@ public class BumpCar : MonoBehaviour
     public static bool lose = false; //if we lose or not
     private bool onceStop;
 
-    private void OnCollisionEnter(Collision collision)
+     void OnCollisionEnter(Collision collision)
     {
         //if our object is car and collision at first time
         if(collision.gameObject.tag == "Player" && !onceStop)
