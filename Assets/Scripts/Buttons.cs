@@ -95,6 +95,10 @@ public class Buttons : MonoBehaviour
                 //change screne
                 StartCoroutine(Loadscene("Shop"));
                 break;
+            case "LeaderBoard":
+                //change screne
+                StartCoroutine(Loadscene("LeaderBoard"));
+                break;
             case "Close":
                 //change screne
                 StartCoroutine(Loadscene("Main"));
